@@ -14,7 +14,7 @@ def hello():
     city = location_data.get('city', 'Unknown location')
 
     # Get the weather information
-    api_key = 'YOUR_OPENWEATHERMAP_API_KEY'
+    api_key = 'd5cc5e9db07426b3722c819726b11853'
     weather_response = requests.get(f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric')
     weather_data = weather_response.json()
     temperature = weather_data['main']['temp']
